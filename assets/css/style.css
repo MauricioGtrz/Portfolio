@@ -1,10 +1,12 @@
 /* Global CSS */
 :root {
-  --blue: #295c8be6;
+  --secondary-blue: #295c8be6;
   --yellow: #ffedaf;
   --white: #fffcf4;
   --dark-blue: #1b3d5c;
-  --grey: #44455b;
+  --second-grey: #44455b;
+  --grey: #444444e6;
+  --blue: #40a5f8;
 }
 
 * {
@@ -23,11 +25,11 @@ body {
 
 /* Navbar Section */
 .navbar {
-  background: var(--blue);
+  background: var(--grey);
   height: 70px;
   padding: 0.5rem calc((70vw - 1200px) / 2);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -47,8 +49,8 @@ body {
 }
 
 .navbar-link:hover {
-  color: var(--yellow);
-  text-decoration: underline;
+  text-decoration: underline var(--blue);
+  text-underline-position: under;
 }
 
 @media screen and (max-width: 950px) {
@@ -110,4 +112,33 @@ body {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--grey);
+  color: var(--white);
+  padding: 20px;
+  margin-top: 100vh;
+}
+
+/* Home Section */
+.home {
+  padding: 0.5rem calc((70vw - 1000px) / 2);
+  color: var(--white);
+  background-color: var(--grey);
+  height: 100vh;
+}
+
+.name {
+  font-size: clamp(3rem, 4vw, 7rem);
+}
+.last-name {
+  color: var(--blue);
+}
+
+.sub-heading {
+  font-size: 1.5rem;
 }
