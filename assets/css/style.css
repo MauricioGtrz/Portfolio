@@ -17,12 +17,8 @@
 }
 
 body {
-  /* background: #ffeeaf99; */
   background: var(--white);
-  /* background: linear-gradient(to right, var(--white), var(--yellow)); */
-  /* background-repeat: no-repeat; */
 }
-
 /* Navbar Section */
 .navbar {
   background: var(--grey);
@@ -130,6 +126,8 @@ footer {
   color: var(--white);
   background-color: var(--grey);
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .name {
@@ -150,4 +148,8 @@ i {
   font-size: clamp(3rem, 6vw, 5rem);
   margin-top: 1rem;
   margin-right: 2rem;
+}
+i:hover {
+  color: var(--blue);
+  transition: color 0.25s ease-out;
 }
