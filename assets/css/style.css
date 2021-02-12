@@ -133,12 +133,21 @@ footer {
 }
 
 .name {
-  font-size: clamp(3rem, 4vw, 7rem);
+  font-size: clamp(2rem, 6vw, 8rem);
+  /* 8rem max and 2rem low*/
 }
 .last-name {
   color: var(--blue);
 }
 
 .sub-heading {
-  font-size: 1.5rem;
+  /* 2.5rem to 3rem max and 1rem min*/
+  font-size: clamp(1rem, 6vw, 2.5rem);
+}
+
+i {
+  color: var(--white);
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin-top: 1rem;
+  margin-right: 2rem;
 }
