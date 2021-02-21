@@ -176,3 +176,23 @@ i:hover {
   color: var(--blue);
   transition: color 0.25s ease-out;
 }
+
+/* About Me Section */
+.about {
+  padding: 0.5rem calc((70vw - 1000px) / 2);
+  background: var(--white);
+  color: var(--black);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-heading {
+  font-size: clamp(2rem, 6vw, 8rem);
+  /* 8rem max and 2rem low*/
+}
