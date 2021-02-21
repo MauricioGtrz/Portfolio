@@ -132,7 +132,7 @@ footer {
   align-items: center;
 }
 
-.home::before {
+/* .home::before {
   background-image: url("../images/background.jpg");
   content: " ";
   display: block;
@@ -146,7 +146,7 @@ footer {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-}
+} */
 
 .home-container {
   position: relative;
