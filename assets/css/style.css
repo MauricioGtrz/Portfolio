@@ -154,9 +154,11 @@ footer {
 }
 
 .name {
+  font-weight: normal;
   font-size: clamp(2rem, 6vw, 8rem);
   /* 8rem max and 2rem low*/
 }
+
 .last-name {
   color: var(--blue);
 }
@@ -180,19 +182,48 @@ i:hover {
 /* About Me Section */
 .about {
   padding: 0.5rem calc((70vw - 1000px) / 2);
-  background: var(--white);
-  color: var(--black);
+  background: var(--grey);
+  color: var(--white);
   height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.about-container {
-  position: relative;
-  z-index: 2;
 }
 
 .about-heading {
+  font-weight: normal;
   font-size: clamp(2rem, 6vw, 8rem);
   /* 8rem max and 2rem low*/
+}
+
+.about-heading2 {
+  color: var(--blue);
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "image bio bio" "job1 job2 job3";
+  grid-column: repeat(3, 1fr);
+}
+
+.about-image {
+  grid-area: image;
+  margin: auto;
+  border-radius: 50%;
+  border: var(--blue) 3px solid;
+}
+
+.about-bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.job-1 {
+  grid-area: job1;
+}
+
+.job-2 {
+  grid-area: job2;
+}
+
+.job-3 {
+  grid-area: job3;
 }
