@@ -127,7 +127,7 @@ footer {
   padding: 0.5rem calc((70vw - 1000px) / 2);
   background: var(--grey);
   color: var(--white);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -152,13 +152,14 @@ footer {
   font-size: clamp(1rem, 6vw, 2.5rem);
 }
 
-i {
+.home-icons {
   color: var(--white);
   font-size: clamp(3rem, 6vw, 5rem);
   margin-top: 1rem;
   margin-right: 2rem;
 }
-i:hover {
+
+.home-icons:hover {
   color: var(--blue);
   transition: color 0.25s ease-out;
 }
@@ -168,7 +169,7 @@ i:hover {
   padding: 0.5rem calc((70vw - 1000px) / 2);
   background: var(--grey);
   color: var(--white);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about-heading {
@@ -225,4 +226,22 @@ i:hover {
     grid-template-areas: "image" "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
+}
+
+/* Work Section*/
+.work {
+  padding: 0.5rem calc((70vw - 1000px) / 2);
+  background: var(--grey);
+  color: var(--white);
+  min-height: 100vh;
+}
+
+.work-heading {
+  font-weight: normal;
+  font-size: clamp(2rem, 6vw, 8rem);
+  /* 8rem max and 2rem low*/
+}
+
+.work-heading2 {
+  color: var(--blue);
 }
