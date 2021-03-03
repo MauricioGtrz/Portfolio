@@ -227,3 +227,8 @@ i:hover {
 .job-3 {
   grid-area: job3;
 }
+
+.job {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: var(--blue) 5px solid;
+}
